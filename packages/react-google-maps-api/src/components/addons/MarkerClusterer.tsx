@@ -1,6 +1,4 @@
-/* eslint-disable filenames/match-exported */
-import * as React from "react"
-import { PureComponent } from "react"
+import React from "react"
 
 import {
   unregisterEvents,
@@ -116,7 +114,7 @@ interface MarkerClustererProps {
   onMouseOut: (cluster: Cluster) => void
 }
 
-export class MarkerClustererComponent extends PureComponent<
+export class MarkerClustererComponent extends React.PureComponent<
   MarkerClustererProps,
   MarkerClustererState
 > {

@@ -1,15 +1,13 @@
-/* global google */
-import * as React from "react"
-// @ts-ignore
+import invariant from "invariant"
+import React from "react"
 import { createPortal } from "react-dom"
+
 import {
   unregisterEvents,
   applyUpdatersToPropsAndRegisterEvents
 } from "../../utils/helper"
 
 import MapContext from "../../map-context"
-// @ts-ignore
-import invariant from "invariant"
 
 const eventMap = {
   onCloseClick: "closeclick",

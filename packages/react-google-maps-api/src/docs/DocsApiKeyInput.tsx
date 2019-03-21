@@ -1,5 +1,4 @@
-import { Component, ChangeEvent, FormEvent } from "react"
-import * as React from "react"
+import React from "react"
 import { setKey, getKey } from "./docs-api-key"
 import LoadScript from "../LoadScript"
 
@@ -21,7 +20,7 @@ interface DocsApiKeyInputState {
   loadScript: boolean
 }
 
-class DocsApiKeyInput extends Component<{}, DocsApiKeyInputState> {
+class DocsApiKeyInput extends React.Component<{}, DocsApiKeyInputState> {
   constructor(props: {}) {
     super(props)
 
@@ -32,13 +31,13 @@ class DocsApiKeyInput extends Component<{}, DocsApiKeyInputState> {
       : { key: "", loadScript: false }
   }
 
-  onInputChange = ({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
+  onInputChange = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
     this.setState(() => ({
       key: value
     }))
   }
 
-  onFormSubmit = (e: FormEvent<HTMLFormElement>) => {
+  onFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     setKey(this.state.key)

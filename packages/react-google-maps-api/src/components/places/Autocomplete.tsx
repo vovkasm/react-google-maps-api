@@ -1,4 +1,5 @@
-import * as React from "react"
+import invariant from "invariant"
+import React from "react"
 
 import {
   unregisterEvents,
@@ -7,7 +8,6 @@ import {
 
 import MapContext from "../../map-context"
 
-import * as invariant from "invariant"
 
 const eventMap = {
   onPlaceChanged: "place_changed"

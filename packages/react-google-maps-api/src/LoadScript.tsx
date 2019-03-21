@@ -1,5 +1,4 @@
-import * as React from "react"
-import { Component, RefObject, createRef, ReactNode } from "react"
+import React from "react"
 
 import { injectScript } from "./utils/injectscript"
 import { preventGoogleFonts } from "./utils/prevent-google-fonts"
@@ -19,7 +18,7 @@ interface LoadScriptProps {
   language?: string;
   region?: string;
   version?: string;
-  loadingElement?: ReactNode;
+  loadingElement?: React.ReactNode;
   onLoad?: () => void;
   onError?: (error: Error) => void;
   onUnmount?: () => void;
@@ -27,7 +26,7 @@ interface LoadScriptProps {
   preventGoogleFontsLoading?: boolean;
 }
 
-class LoadScript extends Component<LoadScriptProps, LoadScriptState> {
+class LoadScript extends React.Component<LoadScriptProps, LoadScriptState> {
   static defaultProps = {
     onLoad: () => {},
     onError: () => {},
@@ -37,7 +36,7 @@ class LoadScript extends Component<LoadScriptProps, LoadScriptState> {
     libraries: []
   }
 
-  check: RefObject<HTMLDivElement>
+  check: React.RefObject<HTMLDivElement>
 
   constructor(props: LoadScriptProps) {
     super(props)
@@ -46,7 +45,7 @@ class LoadScript extends Component<LoadScriptProps, LoadScriptState> {
       loaded: false
     }
 
-    this.check = createRef()
+    this.check = React.createRef()
   }
 
   componentDidMount() {

@@ -1,4 +1,4 @@
-import { PureComponent } from "react"
+import React from "react"
 
 import {
   unregisterEvents,
@@ -26,7 +26,7 @@ interface TrafficLayerProps {
   onLoad?: (trafficLayer: google.maps.TrafficLayer) => void;
 }
 
-export class TrafficLayer extends PureComponent<
+export class TrafficLayer extends React.PureComponent<
   TrafficLayerProps,
   TrafficLayerState
 > {
