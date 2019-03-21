@@ -1,6 +1,6 @@
 {
   "include": [
-    "./src/**/**/*"
+    "./src/**/*"
   ],
   "exclude": [
     "node_modules",
@@ -16,19 +16,8 @@
     "moduleResolution": "node",
     "target": "es5",
     "jsx": "react",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "types": [
-      "googlemaps",
-      "react",
-      "invariant",
-      "markerclustererplus"
-    ],
+    "lib": ["dom", "es2017"],
+    "types": ["googlemaps"],
     "outDir": "./lib/",
     "declaration": true,
     "declarationMap": true,
@@ -41,10 +30,9 @@
     "diagnostics": false,
     "extendedDiagnostics": true,
     "disableSizeLimit": true,
-    "pretty": true,
     "skipLibCheck": false,
-    "allowSyntheticDefaultImports": false, /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
-    "esModuleInterop": false, /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "allowJs": false,
     "checkJs": false,
     "noUnusedLocals": true,
