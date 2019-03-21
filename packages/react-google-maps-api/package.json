@@ -1,6 +1,6 @@
 {
   "name": "@vovkasm/react-google-maps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React.js Google Maps API integration",
   "license": "MIT",
   "author": {
@@ -57,8 +57,7 @@
   "scripts": {
     "build": "rimraf ./lib && tsc",
     "clean": "rimraf ./package-lock.json ./node_modules/",
-    "publish": "npm run build && npm publish .",
-    "publish:next": "npm run build && npm publish . --tag next",
+    "prepublishOnly": "npm run build",
     "tc": "tsc -p ./tsconfig.json --noEmit --traceResolution"
   },
   "dependencies": {
