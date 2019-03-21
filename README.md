@@ -1,3 +1,13 @@
+# Custom fork of @react-google-maps/api
+
+npm install @vovkasm/react-google-maps
+
+Differences with original:
+
+- Only @react-google-maps/api module, no lerna, all work in packages/react-google-maps-api.
+- Fewer production dependencies
+- No yarn
+
 # @react-google-maps organisation root
 
 ## ReadMe
