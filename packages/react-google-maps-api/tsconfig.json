@@ -29,22 +29,18 @@
     "noEmitOnError": true,
     "diagnostics": false,
     "extendedDiagnostics": true,
-    "disableSizeLimit": true,
-    "skipLibCheck": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "allowJs": false,
-    "checkJs": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noErrorTruncation": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitThis": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
     "removeComments": true,
     "forceConsistentCasingInFileNames": true,
+    "importHelpers": true
   },
   "files": [
     "./src/index.ts"

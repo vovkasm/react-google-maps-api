@@ -67,7 +67,8 @@
     "invariant": "2.2.4",
     "marker-clusterer-plus": "2.1.4",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "tslib": "^1.9.3"
   },
   "devDependencies": {
     "@types/googlemaps": "^3.30.19",
